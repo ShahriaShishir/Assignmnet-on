@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 1px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -28,8 +29,8 @@ nav li{
     margin: 10px;
     height: 40px;
     border-radius: 5px;
-    background-color: #FD6E0A;
-    align-items: center;
+    background-color:#FD6E0A;
+    align-items: center; 
 }
 
 /* ----------------
@@ -52,39 +53,64 @@ banner style
    margin-top: 20px;
    padding-bottom: 100px;
 }
+
+/* section */
 .container{
-    /* width: 1200px; */
+    width: 1400px;
     display: flex;
     align-items: center;
-    margin:50px 200px;
+    /* margin:50px 200px; */
     padding-bottom:100px;
+
     
 }
 .img-grid {
-    width: 50%;
+     width: 60%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 10px;
+    padding-left: 190px;
 }
 /* .img-grid img{
     width: 200px;
     height: 200px;
 } */
 .text-right{
-    width: 50%;
+    /* width: 50%; */
+    text-align:left;
+    padding-left: 20px;
+
 }
 
 /* second section */
 .container-2{
-    display:flex;
     margin:50px 200px;
-    padding-bottom:100px;
-  
-    
+    display:flex;
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
+    padding-bottom:30px;
+    /* background-color: darkgray;    */
 }
-.img-split{
-  width: 100px;
-  height: 100px ;
+.description{
+    /* background-color: darkgray;    */
+    background-color: white;
+}
+
+.text{
+    padding-bottom: 20px;
+    background-color: white;
+}
+.Experience{
+    background-color:#FD6E0A;
+    padding: 30px;
+    text-align: right;
+    width: 150px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+.img-split img{
+  width: 500px;
+  height: 700px ;
   
 }
 
@@ -92,11 +118,23 @@ banner style
 .container-3{
     display: grid;
     margin:50px 200px;
-    padding: 200px;
+    padding: 100px;
 }
-.box-img{
-    display:flex ;
-    grid-gap:50px;
+.facts{
+    padding-bottom: 10px;
+}
+.container-img{
+    margin-top: 40px;
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.box{
+    border: 1px solid  tomato;
+    padding:20px;
+    text-align: center;
+    
 }
 
 /* last one */
@@ -107,9 +145,17 @@ banner style
 .adv{
     text-align: center;
 }
+.spons{
+    padding-bottom: 20px;
+}
+.para{
+    padding-bottom: 20px;
+}
 .img-spn{
-    grid-gap:70px;
-    height: 50%;
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(5,1fr);
+    
 }
 
 /* khatam */
@@ -117,4 +163,6 @@ banner style
     margin:50px 200px;
     text-align: center;
     background-color: antiquewhite;
+    padding: 30px;
+    
 }
