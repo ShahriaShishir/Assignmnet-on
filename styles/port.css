@@ -6,12 +6,12 @@
 
 /* header and navigation styles */
 .header{
-    background-color: antiquewhite;
+    background: rgba(255, 144, 14, 0.1);
 }
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 50px 200px;
+    
 }
 .nav-title{
     font-weight:200px;
@@ -29,7 +29,7 @@ nav li{
     margin: 10px;
     height: 40px;
     border-radius: 5px;
-    background-color:#FD6E0A;
+    background-color:#FF900E;
     align-items: center; 
 }
 
@@ -37,11 +37,12 @@ nav li{
 banner style
 ------------------ */
 .banner{
-    margin: 0 200px;
+     margin: 0 200px;
 }
 .banner-section{
     text-align: center;
     align-items: center;
+   
 }
 .banner-img {
     align-items: center;
@@ -81,6 +82,12 @@ banner style
     padding-left: 20px;
 
 }
+.list{
+    color: darkgray;
+}
+.feature{
+    color:#FF900E ;
+}
 
 /* second section */
 .container-2{
@@ -101,12 +108,14 @@ banner style
     background-color: white;
 }
 .Experience{
-    background-color:#FD6E0A;
+    background-color:#FF900E;
     padding: 30px;
     text-align: right;
     width: 150px;
-    margin-left: -20px;
-    margin-top: -20px;
+    /* margin-left: -20px;
+    margin-top: -20px; */
+    position: relative;
+    position: absolute;
 }
 .img-split img{
   width: 500px;
@@ -128,6 +137,7 @@ banner style
     display: grid;
     grid-gap:20px;
     grid-template-columns: repeat(4,1fr);
+   
 
 }
 .box{
@@ -166,3 +176,19 @@ banner style
     padding: 30px;
     
 }
+
+/* ---------
+extra------ */
+
+.hero{
+    background-image: ();
+}
+
+/* media quaries */
+
+/* ---------------
+mobile devices
+------------------- */
+/* @media only screen  and (max-width:626){
+    
+} */
