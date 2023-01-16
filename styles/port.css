@@ -19,7 +19,6 @@ nav{
 }
 nav ul{
     display: flex;
-  
 }
 nav li{
     list-style: none;
@@ -60,10 +59,7 @@ banner style
     width: 1400px;
     display: flex;
     align-items: center;
-    /* margin:50px 200px; */
-    padding-bottom:100px;
-
-    
+    padding-bottom:100px; 
 }
 .img-grid {
      width: 60%;
@@ -72,12 +68,8 @@ banner style
     grid-gap: 10px;
     padding-left: 190px;
 }
-/* .img-grid img{
-    width: 200px;
-    height: 200px;
-} */
+
 .text-right{
-    /* width: 50%; */
     text-align:left;
     padding-left: 20px;
 
@@ -93,27 +85,20 @@ banner style
 .container-2{
     margin:50px 200px;
     display:flex;
-    /* white-space: nowrap;
-    text-overflow: ellipsis; */
     padding-bottom:30px;
-    /* background-color: darkgray;    */
-}
-.description{
-    /* background-color: darkgray;    */
-    background-color: white;
 }
 
 .text{
-    padding-bottom: 20px;
-    background-color: white;
+    padding-bottom: 20px; 
+    border: 1px solid gainsboro;
 }
+
+
 .Experience{
     background-color:#FF900E;
     padding: 30px;
     text-align: right;
     width: 150px;
-    /* margin-left: -20px;
-    margin-top: -20px; */
     position: relative;
     position: absolute;
 }
@@ -137,15 +122,17 @@ banner style
     display: grid;
     grid-gap:20px;
     grid-template-columns: repeat(4,1fr);
-   
-
+  
 }
 .box{
     border: 1px solid  tomato;
     padding:20px;
-    text-align: center;
-    
+    text-align: center; 
 }
+.box:hover{
+    color:blueviolet ;
+}
+
 
 /* last one */
 .container-4{
@@ -177,18 +164,114 @@ banner style
     
 }
 
+
 /* ---------
 extra------ */
-
-.hero{
-    background-image: ();
+.contain{
+    height: 600px;
+    width: 1600px;
 }
+.hero-title{
+    font-weight:200px;
+    font-size: 60px;
+   text-align: center;
+   padding-top: 40px;
+   background-color:burlywood;
+   
+}
+.hero{
+    font-size: 20px;
+    background-color:bisque;
+}
+.field{
+    border: 1px solid;
+    height: 400px;
+}
+.ball{
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: red;
+    position: relative;
+    left: 300px;
+    transition: 1s ease-out 0.2s;
+}
+.field:hover .ball{
+    transform: translate(1000px,-250px);
+}
+.bat{
+    transition: transform 0.2s ease-in;
+}
+.field:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: top right ;
+}
+
+  
 
 /* media quaries */
 
 /* ---------------
 mobile devices
 ------------------- */
-/* @media only screen  and (max-width:626){
+@media only screen  and (max-width:550px){
+
+    nav{
+        display: contents;
+    }
+    nav ul{
+        display: grid;
+    }
+    .banner{
+        margin: 0;
+    }
+    .banner-img img{
+        height: 600px;
+        width: 700px;
     
-} */
+    }
+
+   .container{
+    display: grid;
+    width: 100%s;
+   }
+
+   .img-grid {
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+    padding-left: 0;
+}
+
+.container-2{
+        display: contents;
+}
+
+.container-3{
+    display: contents;
+}
+.container-img{
+    grid-template-columns: repeat(1,1fr);
+}
+.container-4{
+    margin: 0;
+}
+.img-spn{
+    display: contents;
+    grid-template-columns: repeat(1,1fr);
+    padding-bottom: 20px;
+}
+
+.containerrr{
+    margin:0;
+    padding: 30px;
+}
+
+.contain{
+    height: 400px;
+    width: 400px;
+}
+
+.field{
+    display: contents;
+}
+}
